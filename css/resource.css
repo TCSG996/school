@@ -1,0 +1,313 @@
+.top-nav {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, #e6f3ff, #5badf5, #e6f3ff);
+  display: flex;
+}
+.top-nav .top-nav-left {
+  width: 90px;
+  height: 90px;
+}
+.top-nav .top-nav-left img {
+  width: 90px;
+  height: 90px;
+  margin-top: 5px;
+}
+.top-nav .top-nav-text {
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+}
+.top-nav .top-nav-text1 {
+  display: flex;
+  line-height: 100px;
+  margin-left: auto;
+  margin-right: 100px;
+}
+.top-nav .top-nav-text1 li {
+  list-style: none;
+  margin-left: 20px;
+}
+.top-nav .top-nav-text1 li a {
+  text-decoration: none;
+  color: black;
+}
+.main-content {
+  width: 90%;
+  margin: 20px auto;
+}
+.main-content h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.main-content .upload-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.main-content .upload-section .upload-btn {
+  padding: 10px 20px;
+  background-color: #5badf5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-content .upload-section .upload-btn:hover {
+  background-color: #4a91d1;
+}
+.main-content .upload-section .search-box {
+  display: flex;
+  gap: 10px;
+}
+.main-content .upload-section .search-box input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.main-content .upload-section .search-box button {
+  padding: 8px 15px;
+  background-color: #5badf5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.main-content .resource-nav {
+  margin-bottom: 20px;
+}
+.main-content .resource-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  border-bottom: 2px solid #eee;
+}
+.main-content .resource-nav ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.main-content .resource-nav ul li.active {
+  color: #5badf5;
+  border-bottom: 2px solid #5badf5;
+  margin-bottom: -2px;
+}
+.main-content .resource-nav ul li:hover {
+  color: #5badf5;
+}
+.main-content .resource-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.main-content .resource-list table th,
+.main-content .resource-list table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.main-content .resource-list table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+.main-content .resource-list table .resource-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-content .resource-list table .resource-name img {
+  width: 24px;
+  height: 24px;
+}
+.main-content .resource-list table .operation-buttons button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.main-content .resource-list table .operation-buttons button.download-btn {
+  background-color: #5badf5;
+  color: white;
+}
+.main-content .resource-list table .operation-buttons button.download-btn:hover {
+  background-color: #4a91d1;
+}
+.main-content .resource-list table .operation-buttons button.preview-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+.main-content .resource-list table .operation-buttons button.preview-btn:hover {
+  background-color: #45a049;
+}
+.main-content .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.main-content .pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+.main-content .pagination button.active {
+  background-color: #5badf5;
+  color: white;
+  border-color: #5badf5;
+}
+.main-content .pagination button:hover:not(.active) {
+  background-color: #f5f5f5;
+}
+.upload-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.upload-modal .modal-content {
+  position: relative;
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 5px;
+}
+.upload-modal .modal-content h4 {
+  margin-bottom: 20px;
+}
+.upload-modal .modal-content .form-group {
+  margin-bottom: 15px;
+}
+.upload-modal .modal-content .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.upload-modal .modal-content .form-group input,
+.upload-modal .modal-content .form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.upload-modal .modal-content .modal-buttons {
+  text-align: right;
+  margin-top: 20px;
+}
+.upload-modal .modal-content .modal-buttons button {
+  padding: 8px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.upload-modal .modal-content .modal-buttons button.submit-btn {
+  background-color: #5badf5;
+  color: white;
+}
+.upload-modal .modal-content .modal-buttons button.cancel-btn {
+  background-color: #999;
+  color: white;
+}
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.preview-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+.preview-modal .modal-content {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+.preview-modal .modal-content .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.preview-modal .modal-content .modal-header h4 {
+  margin: 0;
+  font-size: 18px;
+}
+.preview-modal .modal-content .modal-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+.preview-modal .modal-content .modal-header .close-btn:hover {
+  color: #333;
+}
+.preview-modal .modal-content .modal-body {
+  height: calc(100% - 60px);
+  overflow: auto;
+}
+.progress-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.progress-modal .modal-content {
+  position: relative;
+  width: 300px;
+  margin: 20% auto;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.progress-modal .modal-content h4 {
+  margin-bottom: 15px;
+}
+.progress-modal .modal-content .progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-modal .modal-content .progress-bar .progress {
+  width: 0;
+  height: 100%;
+  background-color: #5badf5;
+  transition: width 0.3s;
+}
+.progress-modal .modal-content .progress-text {
+  margin-top: 10px;
+  color: #666;
+}

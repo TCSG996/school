@@ -1,0 +1,392 @@
+// 顶部导航栏开始 
+.top-nav {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #e6f3ff, #5badf5, #e6f3ff);
+    display: flex;
+
+    .top-nav-left {
+        width: 90px;
+        height: 90px;
+
+        img {
+            width: 90px;
+            height: 90px;
+            margin-top: 5px;
+
+        }
+    }
+
+    .top-nav-text {
+        width: 500px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 20px;
+    }
+
+    .top-nav-text1 {
+        display: flex;
+        line-height: 100px;
+        margin-left: auto;
+        margin-right: 100px;
+
+        li {
+            list-style: none;
+            margin-left: 20px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+// 顶部导航栏结束
+
+// 主要内容样式
+.main-content {
+    width: 90%;
+    margin: 20px auto;
+
+    h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    // 上传区域样式
+    .upload-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .upload-btn {
+            padding: 10px 20px;
+            background-color: #5badf5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #4a91d1;
+            }
+        }
+
+        .search-box {
+            display: flex;
+            gap: 10px;
+
+            input {
+                width: 300px;
+                padding: 8px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+
+            button {
+                padding: 8px 15px;
+                background-color: #5badf5;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // 资源分类导航
+    .resource-nav {
+        margin-bottom: 20px;
+
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            border-bottom: 2px solid #eee;
+
+            li {
+                padding: 10px 20px;
+                cursor: pointer;
+
+                &.active {
+                    color: #5badf5;
+                    border-bottom: 2px solid #5badf5;
+                    margin-bottom: -2px;
+                }
+
+                &:hover {
+                    color: #5badf5;
+                }
+            }
+        }
+    }
+
+    // 资源列表样式
+    .resource-list {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+
+            th,
+            td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #eee;
+            }
+
+            th {
+                background-color: #f5f5f5;
+                font-weight: bold;
+            }
+
+            .resource-name {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .operation-buttons {
+                button {
+                    padding: 5px 10px;
+                    margin-right: 5px;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+
+                    &.download-btn {
+                        background-color: #5badf5;
+                        color: white;
+
+                        &:hover {
+                            background-color: #4a91d1;
+                        }
+                    }
+
+                    &.preview-btn {
+                        background-color: #4CAF50;
+                        color: white;
+
+                        &:hover {
+                            background-color: #45a049;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 分页控件样式
+    .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 20px;
+
+        button {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background-color: white;
+            cursor: pointer;
+
+            &.active {
+                background-color: #5badf5;
+                color: white;
+                border-color: #5badf5;
+            }
+
+            &:hover:not(.active) {
+                background-color: #f5f5f5;
+            }
+        }
+    }
+}
+
+// 保持现有的尾脚样式...
+
+// 上传模态框样式
+.upload-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .modal-content {
+        position: relative;
+        background-color: white;
+        margin: 15% auto;
+        padding: 20px;
+        width: 50%;
+        border-radius: 5px;
+
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+        }
+
+        .modal-buttons {
+            text-align: right;
+            margin-top: 20px;
+
+            button {
+                padding: 8px 15px;
+                margin-left: 10px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+
+                &.submit-btn {
+                    background-color: #5badf5;
+                    color: white;
+                }
+
+                &.cancel-btn {
+                    background-color: #999;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// 尾脚开始
+.footer {
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #666;
+        line-height: 1.5;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+// 尾脚结束
+
+// 预览模态框样式
+.preview-modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+
+    .modal-content {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        margin: 5% auto;
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            
+            h4 {
+                margin: 0;
+                font-size: 18px;
+            }
+            
+            .close-btn {
+                background: none;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                color: #666;
+                
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+        
+        .modal-body {
+            height: calc(100% - 60px);
+            overflow: auto;
+        }
+    }
+}
+
+// 下载进度模态框样式
+.progress-modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    .modal-content {
+        position: relative;
+        width: 300px;
+        margin: 20% auto;
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        
+        h4 {
+            margin-bottom: 15px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            
+            .progress {
+                width: 0;
+                height: 100%;
+                background-color: #5badf5;
+                transition: width 0.3s;
+            }
+        }
+        
+        .progress-text {
+            margin-top: 10px;
+            color: #666;
+        }
+    }
+}

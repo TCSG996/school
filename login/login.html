@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../img/人工智能系系徽.png" alt="系徽">
+            </div>
+            <div class="title">登录 | 注册</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="login-box">
+            <div class="login-tabs">
+                <a href="#" class="tab active">账号登录</a>
+                <span class="divider">|</span>
+                <a href="#" class="tab">扫码登录</a>
+            </div>
+            <div class="login-form">
+                <div class="error-message" id="loginError" style="display: none; color: red; margin-bottom: 10px;"></div>
+                
+                <form id="loginForm" onsubmit="return handleLogin(event)">
+                    <div class="form-group">
+                        <input type="text" id="username" name="username" placeholder="邮箱/手机号码/学号" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" placeholder="密码" required>
+                    </div>
+                    <div class="form-extra">
+                        <label class="remember">
+                            <input type="checkbox">
+                            <span>记住我</span>
+                        </label>
+                        <div class="links">
+                            <a href="#">手机号登录</a>
+                            <span>|</span>
+                            <a href="#">忘记密码？</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-btn">登录</button>
+                </form>
+                <div class="other-login">
+                    <div class="title">
+                        <span>其他方式登录</span>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="icon-item">
+                            <img src="../img/wx.png" alt="">
+
+                            <span>微信</span>
+                        </a>
+
+                        <a href="#" class="icon-item">
+                            <img src="../img/wb.png" alt="">
+                            <span>微博</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="register-now">
+                    <a href="#">立即注册</a>
+                    <span>|</span>
+                    <a href="#">游客登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="links">
+                <a href="#">简体</a>
+                <span>|</span>
+                <a href="#">繁体</a>
+                <span>|</span>
+                <a href="#">English</a>
+                <span>|</span>
+                <a href="#">常见问题</a>
+                <span>|</span>
+                <a href="#">隐私政策</a>
+            </p>
+            <p class="copyright">
+                小米公司版权所有-京ICP备10046444-<a href="#">京公网安备11010802020134号</a>-<a href="#">京ICP证110507号</a>
+            </p>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

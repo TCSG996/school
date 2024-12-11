@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - 山西职业技术学院</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../img/人工智能系系徽.png" alt="系徽">
+            </div>
+            <div class="title">注册新账号</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="login-box">
+            <div class="login-form">
+                <form id="registerForm" onsubmit="return handleRegister(event)">
+                    <div class="form-group">
+                        <input type="text" id="username" placeholder="用户名" required>
+                        <div class="error-message" id="usernameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="邮箱" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="密码" required>
+                        <div class="error-message" id="passwordError"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirmPassword" placeholder="确认密码" required>
+                        <div class="error-message" id="confirmPasswordError"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="phone" placeholder="手机号码" required>
+                        <div class="error-message" id="phoneError"></div>
+                    </div>
+                    <button type="submit" class="login-btn">注册</button>
+                </form>
+                <div class="register-now">
+                    <span>已有账号？</span>
+                    <a href="login.html">立即登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="links">
+                <a href="#">简体</a>
+                <span>|</span>
+                <a href="#">繁体</a>
+                <span>|</span>
+                <a href="#">English</a>
+                <span>|</span>
+                <a href="#">常见问题</a>
+                <span>|</span>
+                <a href="#">隐私政策</a>
+            </p>
+            <p class="copyright">
+                版权所有 © 2024 山西职业技术学院
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/register.js"></script>
+</body>
+</html> 

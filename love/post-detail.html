@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帖子详情 - 山西职业技术学院表白墙</title>
+    <link rel="stylesheet" href="../css/love.css">
+    <link rel="stylesheet" href="../css/post-detail.css">
+</head>
+
+<body>
+    <!-- 保持相同的顶部导航栏 -->
+    <div class="top-nav">
+        <!-- ... 导航栏内容保持不变 ... -->
+    </div>
+
+    <div class="main-content">
+        <div class="post-detail">
+            <div class="post-header">
+                <h2 id="postTitle"></h2>
+                <div class="post-meta">
+                    <span id="postAuthor"></span>
+                    <span id="postTime"></span>
+                    <span id="postViews"></span>
+                    <span id="postLikes"></span>
+                </div>
+            </div>
+            <div class="post-content" id="postContent"></div>
+
+            <div class="post-actions">
+                <button class="like-btn" onclick="likePost()">点赞</button>
+                <button class="reply-btn" onclick="showReplyForm()">回复</button>
+            </div>
+
+            <div class="reply-form" style="display: none;">
+                <textarea placeholder="写下你的回复..."></textarea>
+                <div class="form-buttons">
+                    <button onclick="submitReply()">提交回复</button>
+                    <button onclick="cancelReply()">取消</button>
+                </div>
+            </div>
+
+            <div class="replies-section">
+                <h3>全部回复</h3>
+                <div id="repliesList"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 保持相同的页脚 -->
+    <div class="footer">
+        <!-- ... 页脚内容保持不变 ... -->
+    </div>
+
+    <script src="../js/post-detail.js"></script>
+</body>
+
+</html>

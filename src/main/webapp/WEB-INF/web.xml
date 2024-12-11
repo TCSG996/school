@@ -1,0 +1,8 @@
+<servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/api/auth/login</url-pattern>
+</servlet-mapping> 

@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+.header {
+  background: linear-gradient(to right, #e6f3ff, #5badf5, #e6f3ff);
+  padding: 20px 0;
+}
+.header .container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .logo img {
+  height: 60px;
+}
+.header .container .title {
+  font-size: 24px;
+  color: #333;
+}
+.main {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+.main .login-box {
+  width: 400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.main .login-box .login-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+.main .login-box .login-tabs .tab {
+  font-size: 16px;
+  color: #666;
+  text-decoration: none;
+  padding: 0 20px;
+}
+.main .login-box .login-tabs .tab.active {
+  color: #5badf5;
+  font-weight: bold;
+}
+.main .login-box .login-tabs .divider {
+  color: #ddd;
+  margin: 0 10px;
+}
+.main .login-box .login-form .form-group {
+  margin-bottom: 20px;
+}
+.main .login-box .login-form .form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+.main .login-box .login-form .form-group input:focus {
+  border-color: #5badf5;
+  outline: none;
+}
+.main .login-box .login-form .form-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.main .login-box .login-form .form-extra .remember {
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+.main .login-box .login-form .form-extra .remember input[type="checkbox"] {
+  margin-right: 5px;
+}
+.main .login-box .login-form .form-extra .links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+.main .login-box .login-form .form-extra .links a:hover {
+  color: #5badf5;
+}
+.main .login-box .login-form .form-extra .links span {
+  color: #ddd;
+  margin: 0 8px;
+}
+.main .login-box .login-form .login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #5badf5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.main .login-box .login-form .login-btn:hover {
+  background: #4a91d1;
+}
+.main .login-box .login-form .other-login {
+  margin-top: 30px;
+  text-align: center;
+}
+.main .login-box .login-form .other-login .title {
+  position: relative;
+  margin-bottom: 20px;
+}
+.main .login-box .login-form .other-login .title span {
+  background: white;
+  padding: 0 10px;
+  color: #999;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+.main .login-box .login-form .other-login .title:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #eee;
+  z-index: 0;
+}
+.main .login-box .login-form .other-login .icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.main .login-box .login-form .other-login .icons .icon-item {
+  text-decoration: none;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.main .login-box .login-form .other-login .icons .icon-item img {
+  width: 32px;
+  height: 32px;
+}
+.main .login-box .login-form .other-login .icons .icon-item span {
+  font-size: 12px;
+}
+.main .login-box .login-form .other-login .icons .icon-item:hover {
+  color: #5badf5;
+}
+.main .login-box .login-form .register-now {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+.main .login-box .login-form .register-now a {
+  color: #5badf5;
+  text-decoration: none;
+}
+.main .login-box .login-form .register-now a:hover {
+  text-decoration: underline;
+}
+.main .login-box .login-form .register-now span {
+  color: #ddd;
+  margin: 0 8px;
+}
+.footer {
+  background: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer .container .links {
+  margin-bottom: 10px;
+}
+.footer .container .links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer .container .links a:hover {
+  color: #5badf5;
+}
+.footer .container .links span {
+  color: #ddd;
+  margin: 0 8px;
+}
+.footer .container .copyright {
+  color: #999;
+  font-size: 12px;
+}
+.footer .container .copyright a {
+  color: #999;
+  text-decoration: none;
+}
+.footer .container .copyright a:hover {
+  color: #666;
+}
+.error-message {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    /* 头部样式 */
+    .header .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .header .logo img {
+        height: 40px;
+    }
+
+    .header .title {
+        font-size: 18px;
+    }
+
+    /* 登录框样式 */
+    .main {
+        padding: 20px 15px;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px 15px;
+    }
+
+    /* 表单元素 */
+    .form-group input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* 其他登录方式 */
+    .other-login .icons {
+        gap: 20px;
+    }
+
+    .icon-item img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* 页脚 */
+    .footer .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .footer .links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer .links a,
+    .footer .links span {
+        margin: 5px;
+    }
+}
+
+/* 小屏幕手机 */
+@media screen and (max-width: 480px) {
+    .header .title {
+        font-size: 16px;
+    }
+
+    .login-tabs .tab {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .form-extra {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-extra .links {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .other-login .icons {
+        gap: 15px;
+    }
+}
+
+/* 暗黑模式支持 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1a1a1a;
+        color: #fff;
+    }
+
+    .login-box {
+        background: #2d2d2d;
+    }
+
+    .form-group input {
+        background: #3d3d3d;
+        color: #fff;
+        border-color: #4d4d4d;
+    }
+
+    .login-btn {
+        background: #5badf5;
+    }
+
+    .login-btn:hover {
+        background: #4a91d1;
+    }
+
+    .other-login .title span {
+        background: #2d2d2d;
+        color: #ccc;
+    }
+
+    .footer {
+        background: #2d2d2d;
+    }
+
+    .footer a {
+        color: #ccc;
+    }
+}
+
+/* 适配不同的设备像素比 */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon-item img {
+        transform: scale(0.8);
+    }
+}
+
+/* 横屏模式 */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .main {
+        padding: 10px 0;
+    }
+
+    .login-box {
+        margin: 10px auto;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+}
+
+/* 平板设备 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .login-box {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .form-group input {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .login-btn {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/* 可折叠设备 */
+@media screen and (max-width: 320px) {
+    .header .title {
+        font-size: 14px;
+    }
+
+    .login-box {
+        padding: 15px 10px;
+    }
+
+    .form-group input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .other-login .icons {
+        gap: 10px;
+    }
+}
+
+/* 无障碍支持 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
